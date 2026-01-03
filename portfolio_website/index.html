@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukesh | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Mukesh</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="section">
+        <div class="about-container">
+            <div>
+                <h2>Hello, I'm Mukesh 👋</h2>
+                <p>
+                    Final-year B.Tech CSE (AI & DS) student passionate about
+                    building real-world AI and full-stack applications.
+                </p>
+                <p class="typing" id="typingText"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Python</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">NLP</div>
+            <div class="skill">AWS</div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>AI Pharmacovigilance Web App</h3>
+                <p>
+                    Built an AI-powered system to extract adverse event reports
+                    from medical literature using NLP models.
+                </p>
+                <button onclick="showProjectDetails()">View More</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE SECTION ===== -->
+    <section id="experience" class="section">
+        <h2>Experience & Education</h2>
+
+        <ul class="timeline">
+            <li>
+                <strong>B.Tech CSE (AI & DS)</strong> – SASTRA University
+            </li>
+            <li>
+                <strong>Project Intern</strong> – Jeev LifeWorks (Pharmacovigilance)
+            </li>
+            <li>
+                <strong>Python Developer Training</strong> – Zeno Talent
+            </li>
+        </ul>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
