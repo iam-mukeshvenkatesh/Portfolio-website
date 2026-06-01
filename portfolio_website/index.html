@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mukesh | Portfolio</title>
+    <meta name="description" content="Mukesh's Portfolio - Final-year B.Tech CSE (AI & DS) student passionate about AI, Machine Learning, and Full-Stack Development">
+    <meta name="keywords" content="Portfolio, AI, Machine Learning, Full Stack Developer, Data Science, NLP">
+    <meta name="author" content="Mukesh">
+    <meta property="og:title" content="Mukesh | Portfolio">
+    <meta property="og:description" content="Explore my projects in AI, Machine Learning, and Full-Stack Development">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#111">
+    
+    <title>Mukesh | Portfolio - AI & Full Stack Developer</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -21,53 +31,135 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <button id="themeToggle">🌙</button>
+            <div class="nav-right">
+                <button id="themeToggle" class="theme-btn" aria-label="Toggle dark mode">🌙</button>
+                <button id="menuToggle" class="menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
     <!-- ===== ABOUT SECTION ===== -->
     <section id="about" class="section">
         <div class="about-container">
-            <div>
+            <div class="about-content">
                 <h2>Hello, I'm Mukesh 👋</h2>
                 <p>
                     Final-year B.Tech CSE (AI & DS) student passionate about
                     building real-world AI and full-stack applications.
                 </p>
                 <p class="typing" id="typingText"></p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ===== SKILLS SECTION ===== -->
     <section id="skills" class="section">
-        <h2>Skills</h2>
+        <h2>Skills & Technologies</h2>
 
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Python</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Machine Learning</div>
-            <div class="skill">NLP</div>
-            <div class="skill">AWS</div>
+        <div class="skills-categories">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skills-container">
+                    <div class="skill">Python</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>AI & ML</h3>
+                <div class="skills-container">
+                    <div class="skill">Machine Learning</div>
+                    <div class="skill">Natural Language Processing</div>
+                    <div class="skill">Deep Learning</div>
+                    <div class="skill">BioBERT</div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Tools & Platforms</h3>
+                <div class="skills-container">
+                    <div class="skill">AWS</div>
+                    <div class="skill">Git</div>
+                    <div class="skill">Docker</div>
+                    <div class="skill">Jupyter</div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- ===== PROJECTS SECTION ===== -->
     <section id="projects" class="section">
-        <h2>Projects</h2>
+        <h2>Featured Projects</h2>
 
         <div class="projects-container">
 
             <div class="project-card">
-                <h3>AI Pharmacovigilance Web App</h3>
+                <div class="project-header">
+                    <h3>AI Pharmacovigilance Web App</h3>
+                    <span class="project-year">2024-2025</span>
+                </div>
                 <p>
                     Built an AI-powered system to extract adverse event reports
-                    from medical literature using NLP models.
+                    from medical literature using NLP models. Implemented BioBERT-based Named Entity Recognition
+                    to automatically identify drugs, adverse events, and patient information from PDF documents.
                 </p>
-                <button onclick="showProjectDetails()">View More</button>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">NLP</span>
+                    <span class="tech-tag">BioBERT</span>
+                    <span class="tech-tag">AWS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+                <button class="btn btn-small" onclick="showProjectDetails('pharma')">View Details</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Machine Learning Pipeline</h3>
+                    <span class="project-year">2024</span>
+                </div>
+                <p>
+                    Developed an end-to-end machine learning pipeline for predictive analytics.
+                    Implemented data preprocessing, feature engineering, model training, and deployment
+                    with automated evaluation metrics.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">SQL</span>
+                </div>
+                <button class="btn btn-small" onclick="showProjectDetails('ml')">View Details</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Full Stack Web Application</h3>
+                    <span class="project-year">2023</span>
+                </div>
+                <p>
+                    Created a responsive web application with modern UI/UX design.
+                    Integrated with backend APIs, implemented user authentication, and optimized
+                    for performance across all devices.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">API</span>
+                </div>
+                <button class="btn btn-small" onclick="showProjectDetails('fullstack')">View Details</button>
             </div>
 
         </div>
@@ -77,30 +169,79 @@
     <section id="experience" class="section">
         <h2>Experience & Education</h2>
 
-        <ul class="timeline">
-            <li>
-                <strong>B.Tech CSE (AI & DS)</strong> – SASTRA University
-            </li>
-            <li>
-                <strong>Project Intern</strong> – Jeev LifeWorks (Pharmacovigilance)
-            </li>
-            <li>
-                <strong>Python Developer Training</strong> – Zeno Talent
-            </li>
-        </ul>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>B.Tech CSE (AI & Data Science)</h3>
+                    <p class="timeline-date">SASTRA University | Expected 2025</p>
+                    <p>Specializing in Artificial Intelligence and Data Science with focus on machine learning and natural language processing.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Project Intern - Pharmacovigilance</h3>
+                    <p class="timeline-date">Jeev LifeWorks | 2024-2025</p>
+                    <p>Developed NLP solutions for automated adverse event extraction from medical literature using BioBERT models.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Python Developer Training</h3>
+                    <p class="timeline-date">Zeno Talent | 2023</p>
+                    <p>Completed comprehensive training in Python programming, data structures, and web development fundamentals.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ===== CONTACT SECTION ===== -->
     <section id="contact" class="section">
-        <h2>Contact Me</h2>
+        <h2>Let's Connect</h2>
+        <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello!</p>
 
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name">
-            <input type="email" id="email" placeholder="Your Email">
-            <textarea id="message" placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <div class="contact-wrapper">
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/iam-mukeshvenkatesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:your-email@example.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2025 Mukesh. All rights reserved. | Crafted with ❤️ and code</p>
+    </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
