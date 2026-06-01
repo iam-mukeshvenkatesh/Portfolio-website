@@ -160,8 +160,8 @@ Feel free to fork this repository and customize it for your own portfolio!
 ## 📞 Connect With Me
 
 - **GitHub**: [iam-mukeshvenkatesh](https://github.com/iam-mukeshvenkatesh)
-- **Email**: [Your Email Here]
-- **LinkedIn**: [Your LinkedIn Profile]
+- **Email**: mukeshvenkatesh472@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/mukesh-venkatesh-69011126a/
 
 ## 🙏 Acknowledgments
 
