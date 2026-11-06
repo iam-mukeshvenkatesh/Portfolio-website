@@ -4,7 +4,7 @@ A modern, responsive portfolio website showcasing my skills, projects, and exper
 
 ## 🌐 Live Demo
 
-Visit my portfolio: [https://iam-mukeshvenkatesh.github.io/Portfolio-website/](https://iam-mukeshvenkatesh.github.io/Portfolio-website/)
+Visit my portfolio: Download portfolio_website/index.html and portfolio_website/style.css into the same directory and open index.html on your browser.
 
 ## ✨ Features
 
